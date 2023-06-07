@@ -1,0 +1,138 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+}
+html {
+  box-sizing: border-box;
+  height: 100%;
+}
+body {
+  background: #c31432; /* fallback for old browsers */
+  background: linear-gradient(to right, #240b36, #c31432);
+  font-family: sans-serif;
+  height: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #333;
+}
+.container {
+  width: 70%;
+  height: 470px;
+  background-color: white;
+  overflow: hidden;
+  border-radius: 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  position: relative;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.left,
+.right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #eee;
+}
+
+.left h1,
+.right h1 {
+  font-size: 40px;
+  font-weight: 400;
+  margin-top: 60px;
+}
+.player1-score,
+.player2-score {
+  display: block;
+  color: #c31432;
+  font-size: 60px;
+  margin-top: 20px;
+}
+.active {
+  background-color: #ccc;
+}
+.current-box {
+  margin-top: 70px;
+  border-radius: 5px;
+  background-color: #c31432;
+  color: white;
+  padding: 15px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.current-box h3 {
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+.current-box .player1-current,
+.current-box .player2-current {
+  font-size: 40px;
+}
+.float-box {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+}
+.btn {
+  padding: 8px 16px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  color: white;
+  font-family: inherit;
+  background: #c31432; /* fallback for old browsers */
+  background: linear-gradient(to right, #240b36, #c31432);
+  border-radius: 5px;
+  font-weight: 600;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.btn:active {
+  transform: scale(0.9);
+}
+.new-game {
+  margin-top: 65px;
+}
+.float-box img {
+  visibility: hidden;
+  width: 80px;
+  height: 80px;
+  margin: 50px 0;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.hold {
+  margin-top: 15px;
+}
+
+.modal {
+  width: 35%;
+  padding: 20px;
+  color: #c31432;
+  background-color: #eee;
+  border-radius: 5px;
+  font-weight: 600;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 13px;
+}
+.modal h1 {
+  font-weight: 600;
+}
+.winner {
+  font-weight: 600;
+}
+
+.hidden {
+  display: none;
+}
